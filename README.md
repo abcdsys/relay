@@ -1,5 +1,5 @@
 ## 一、快速开始 🚀
-1. 网路必须开启IPV6,没有IPV6就别浪费时间了
+1. 网络必须开启IPV6,没有IPV6就别浪费时间了
 
 2. 容器只限于psyduck框架使用,专为psyduck开发,其他框架/脚本无法兼容使用
 
@@ -18,7 +18,7 @@
 ```
 docker build -t psyduck .
 ```
-   > 先确认你机器cpu类型,找到cpu型号对应的可执行文件psyduck-xxx重命名psyduck,x86机器将psyduck-amd64改名psyduck,n1盒子将psyduck-arm改名psyduck 
+   > 先确认你机器cpu架构,找到cpu架构对应的可执行文件psyduck-xxx重命名psyduck,x86机器将psyduck-amd64改名psyduck,n1盒子将psyduck-arm改名psyduck 
    >
  
 ### 2. 创建网络
@@ -31,6 +31,7 @@ docker network create -d macvlan   --subnet=192.168.100.0/24   --gateway=192.168
    >
    > 网段: 192.168.100.0 按照自己网段实际填写(192.168.2.0, 10.0.0.0, 192.168.3.0)
    >
+   > eth0: 以太网卡,一般都是eth0,飞牛nas一般为enp4s0 可以通过ip -6 a 命令查看
  
 
 ### 3. 创建容器
