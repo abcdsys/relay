@@ -50,7 +50,7 @@ docker run -d --name psyduck31 --restart=always --ip=192.168.100.31 --privileged
    >
    > openwrt或者一般路由器都可以分配网络地址的起始分配基址(ip段从第几开始分配),可以很好解决ip问题
  ### 5. 使用方式
-   >  在iniPath目录(默认是psyduck框架的config目录,如果iniPath设置了在/ql/data就在/ql/data)创建proxy.ini,如果之前有可以忽略,复制如下内容,
+   >  在iniPath目录(默认是psyduck框架的config目录,如果iniPath设置了在/ql/data/config就在/ql/data/config)创建proxy.ini,如果之前有可以忽略,复制如下内容,
 
 ```
 [jdRelay]
